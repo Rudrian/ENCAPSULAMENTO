@@ -1,0 +1,27 @@
+package ObjetosConta;
+
+import ContaBanca.Cliente;
+
+public class ObjetoCliente {
+
+    public static void main(String[] args) {
+        Cliente cliente1 = new Cliente(1, "Ana Silva", "1234-5678", "123.456.789-00", "MG-12.345.678");
+
+        System.out.println("Informações do Cliente 1:");
+        System.out.println("ID: " + cliente1.getId());
+        System.out.println("Nome: " + cliente1.getNome());
+        System.out.println("Telefone: " + cliente1.getTelefone());
+        System.out.println("CPF: " + cliente1.getCpf());
+        System.out.println("RG: " + cliente1.getRg());
+
+        cliente1.setNome("Ana Paula Silva");
+        cliente1.setTelefone("9876-5432");
+
+        System.out.println("Informações Atualizadas do Cliente 1:");
+        System.out.println("ID: " + cliente1.getId());
+        System.out.println("Nome: " + cliente1.getNome());
+        System.out.println("Telefone: " + cliente1.getTelefone());
+        System.out.println("CPF: " + cliente1.getCpf());
+        System.out.println("RG: " + cliente1.getRg());
+    }
+}
