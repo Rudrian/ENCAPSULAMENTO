@@ -1,0 +1,21 @@
+package ObjetosConta;
+
+import ContaBanca.Tema1;
+
+public class ObjetoTema1 {
+
+    public static void main(String[] args) {
+        Tema1 tema1 = new Tema1(1, "Festa de Aniversário", 200.00, "Azul");
+
+        tema1.exibirInformacoes();
+
+        Tema1 tema2 = new Tema1();
+
+        tema2.setId(2);
+        tema2.setNome("Festa Junina");
+        tema2.setValorAluguel(150.00);
+        tema2.setCorToalha("Vermelha");
+
+        tema2.exibirInformacoes();
+    }
+}
