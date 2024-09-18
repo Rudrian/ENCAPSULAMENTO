@@ -1,0 +1,60 @@
+package ContaBanca;
+
+public class Tema1 {
+
+    private int id;
+    private String nome;
+    private double valorAluguel;
+    private String corToalha;
+
+    public Tema1() {
+    }
+
+    public Tema1(int id, String nome, double valorAluguel, String corToalha) {
+        this.id = id;
+        this.nome = nome;
+        setValorAluguel(valorAluguel);
+        this.corToalha = corToalha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getValorAluguel() {
+        return valorAluguel;
+    }
+
+    public void setValorAluguel(double valorAluguel) {
+        if (valorAluguel >= 0) {
+            this.valorAluguel = valorAluguel;
+        } else {
+            System.out.println("Valor de aluguel inválido! O valor não pode ser menor que 0.");
+        }
+    }
+
+    public String getCorToalha() {
+        return corToalha;
+    }
+
+    public void setCorToalha(String corToalha) {
+        this.corToalha = corToalha;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Tema: " + nome + ", Valor do Aluguel: " + valorAluguel + ", Cor da Toalha: " + corToalha);
+    }
+}
+
