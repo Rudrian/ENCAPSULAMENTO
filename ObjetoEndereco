@@ -1,0 +1,24 @@
+package ObjetosConta;
+
+import ContaBanca.Endereco;
+
+public class ObjetoEndereco {
+
+    public static void main(String[] args) {
+    	
+    	Endereco endereco1 = new Endereco();
+    	endereco1.setId(1);
+    	endereco1.setNome("Rua das Flores");
+    	endereco1.setNumero(123);
+    	endereco1.setComplemento("Apto 101");
+    	endereco1.setBairro("Jardim");
+    	endereco1.setCidade("São Paulo");
+    	endereco1.setCep("12345-678");
+    	endereco1.setUf("SP");
+    	endereco1.exibirInformacoes();
+
+        Endereco endereco2 = new Endereco(2, "Avenida Paulista", 456, "Sala 302", "Centro", "São Paulo", "98765-432", "SP");
+        endereco2.exibirInformacoes();
+    }
+}
+
