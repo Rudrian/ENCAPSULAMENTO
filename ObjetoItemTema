@@ -1,0 +1,22 @@
+package ObjetosConta;
+
+import ContaBanca.ItemTema;
+
+public class ObjetoItemTema {
+
+    public static void main(String[] args) {
+
+        ItemTema item1 = new ItemTema(1, "Bolo de Festa", "Um bolo decorado para festas temáticas.");
+
+        item1.exibirInformacoes();
+
+        ItemTema item2 = new ItemTema();
+
+        item2.setId(2);
+        item2.setNome("Bolo de Casamento");
+        item2.setDescricao("Bolo decorado para cerimônias de casamento.");
+
+        item2.exibirInformacoes();
+    }
+}
+
